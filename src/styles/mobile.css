@@ -1,0 +1,263 @@
+main {
+    padding: 3.5rem 1.25rem;
+}
+
+body {
+    height: 100vh;
+    width: 93vw;
+    font-family: 'Inter';
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    height: 76px;
+    width: 100%;
+    top: 0px;
+    background-color: var(--grey1);
+    position: fixed;
+}
+
+.header__span {
+    color: var(--whitefixed);
+}
+
+.div__user {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+#div__user-id {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div__user span {
+    color: var(--grey2);
+}
+
+.div__user h3 {
+    color: var(--grey1);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.div__img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.div__img img {
+    width: 52px;
+    height: 52px;
+}
+
+.div__user-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div__user--button-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.div__user--input-title {
+    height: 3.25rem;
+    border: 2px solid var(--grey4);
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    margin: 1.625rem 0;
+    color: var(--grey2);
+}
+
+.div__user-textarea {
+    resize: none;
+    height: 8.125rem;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--grey4);
+    color: var(--grey2);
+    margin-bottom: 1.4rem;
+    outline: none;
+
+}
+
+::placeholder {
+    color: var(--grey3);
+}
+
+.div__user--button {
+    background-color: var(--grey4);
+    border: 2px solid var(--grey4);
+    color: var(--grey3);
+    width: 4.3125rem;
+    height: 2.375rem;
+}
+
+.section__aside {
+    padding: 0 1.25rem;
+}
+
+.aside {
+    display: flex;
+    overflow-x: auto;
+}
+
+.suggestions__list {
+    display: flex;
+}
+
+.suggestions__item {
+    margin: 0;
+    margin-right: 3.75rem;
+    width: max-content;
+}
+
+.section__aside--button {
+    height: 1.75rem;
+    width: 5.5625rem;
+    background-color: transparent;
+    color: var(--grey1);
+    border: 1px solid var(--grey1);
+    border-radius: 2px;
+    padding: 0 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.posts__div {
+    margin-left: 1.25rem;
+    margin-bottom: 3.125rem;
+    margin-top: 2.5rem;
+    font-weight: var(--title-1-weight);
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 2.5rem
+}
+
+.div__user-h3 {
+    width: 20.0625rem;
+    height: 1.5rem;
+    font-weight: bold;
+    font-weight: var(--title-1-weight);
+    font-size: 1.25rem;
+}
+
+.div__user-span {
+    float: left;
+    justify-content: left;
+    align-items: start;
+}
+
+.posts {
+    padding: 1.25rem;
+}
+
+.divButtons {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.divButtons img {
+    margin-left: 2rem;
+}
+
+.divButtons span {
+    margin-left: .4375rem;
+}
+
+.user-container-div {
+    display: flex;
+    align-items: center;
+}
+
+.container h2 {
+    font-weight: var(--title-1-weight);
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: var(--grey1);
+    margin-top: 2.125rem;
+}
+
+.container p {
+    font-weight: var(--text-1-weight);
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: var(--grey2);
+    margin-bottom: 2rem;
+}
+
+.post-button {
+    font-weight: var(--title-1-weight);
+    font-size: .875rem;
+    background-color: var(--grey0);
+    color: var(--whitefixed);
+    width: 5.75rem;
+    height: 2.375rem;
+    border-radius: .25rem;
+}
+
+
+.following {
+    background-color: var(--brand-1);
+    color: var(--whitefixed);
+    font-weight: var(--title-1-weight);
+    border: 1px solid var(--brand-1);
+    width: max-content;
+    height: 1.75rem;
+
+}
+
+#modal {
+    width: 24.0625rem;
+    padding: 0rem 1.5rem 2rem 1.5rem;
+    height: max-content;
+}
+
+.h2-modal {
+    font-weight: var(--title-1-weight);
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: var(--grey1);
+    margin-top: 2.125rem;
+}
+
+.p-modal {
+    font-weight: var(--text-1-weight);
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: var(--grey2);
+    margin-bottom: 2rem;
+}
+
+.buttonClose {
+    width: 2.5rem;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--grey5);
+    margin-top: 1rem;
+    margin-right: .625rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+}
+
+.section__aside h2 {
+    font-weight: var(--title-1-weight);
+    font-size: 1.25rem;
+}

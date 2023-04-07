@@ -1,23 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/mobile.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
+  <link rel="stylesheet" href="./src/styles/desktop.css" />
 
-    <title>Criando rede social</title>
-  </head>
-  <body></body>
+  <script type="module" src="./src/scripts/database.js" defer></script>
+  <script type="module" src="./src/scripts/index.js" defer></script>
+
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Criando rede social</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__img" src="./src/assets/img/logo.svg" alt="image">
+    <span class="header__span">Sair</span>
+  </header>
+  <dialog class="modal" id="modal">
+
+  </dialog>
+    <dialog class="home__modal">
+      <div class="dialog__modal">
+      </div>
+    </dialog>
+    <main>
+      <div class="main__container">
+        <div class="main__container-wrapper">
+          <div class="div__user">
+            <div class="div__img"><img src="./src/assets/img/user1.svg" alt=""></div>
+            <div class="div__user-name">
+              <h3>Samuel Leão</h3>
+              <span>Front end Engineer</span>
+            </div>
+          </div>
+          <form class="div__user-form">
+            <label for="title" class="div__user-form-label-title"></label>
+            <input class="div__user--input-title" type="text" id="titulo" name="titulo"
+              placeholder="Digitar o título do post">
+            <label for="text-area" class="div__user-form-label-textarea"></label>
+            <textarea name="text-area" class="div__user-textarea" placeholder="Digitar descrição do post"></textarea>
+            <div class="div__user--button-div"><button class="div__user--button">Postar</button></div>
+          </form>
+        </div>
+  <section class="section__aside">
+    <h2>Sugestões para você seguir</h2>
+    <aside class="aside">
+      <ul class="suggestions__list">
+      </ul>
+    </aside>
+  </section>
+  </div>
+  <section class="posts">
+    <div class="posts__div">
+      <h2>Posts</h2>
+    </div>
+    <div class="container">
+      <div class="div__user">
+        <div class="div__img"><img src="./src/assets/img/user1.svg" alt=""></div>
+        <div class="div__user-name">
+          <h3>Samuel Leão</h3>
+          <span>Front end Engineer</span>
+        </div>
+      </div>
+      <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+      <p>A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o
+        seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto.
+        O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias,
+        os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.</p>
+      <div class="divButtons">
+        <button class="button-modal post-button">Abrir post</button>
+        <img src="./src/assets/img/heart-grey.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+  </main>
+</body>
+
 </html>
