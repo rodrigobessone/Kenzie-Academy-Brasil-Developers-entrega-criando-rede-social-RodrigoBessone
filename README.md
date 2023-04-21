@@ -8,13 +8,13 @@ sociais populares.
 
 - Adição de amigos; 
 - Reações em publicações;
-- Modal para confirmação de exclusão de publicações e perfis;
+- Modal para confirmação de exclusão de publicações e perfis.
 
 ## Tecnologias utilizadas
 
 - CSS;
 - JavaScript;
-- HTML;
+- HTML.
 
 ## Como executar o projeto
 
